@@ -3,9 +3,9 @@
 ## Basic setup
 
 1. First you need to have a github account
-   - goto: [https://github.com](<[github.com](https://github.com)>) to create one.
+   - Navigate to: [https://github.com](<[github.com](https://github.com)>) to create one.
 2. You need to have git installed on your computer
-   - goto: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the instructions for your opperating system.
+   - Navigate to: [https://git-scm.com/book/en/v2/Getting-Started-Installing-Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the instructions for your opperating system.
 3. **Fork** the We On Bikes [repository]() on github
    - By forking you create a complete independent copy of the repository on your own github account.
 4. Now that you have a fork of the weonbikes.com website on your github you can **clone** your repository to your local machine:
@@ -70,32 +70,32 @@ git push [branch_name]
 where [branch_name] is the name of the branch you are currently working on
 
 7. Make a **pull request**
-   - goto your repository on github.com and make a pull request for your contribution (the new branch)
+   - Navigate to your repository on github.com and make a pull request for your contribution (the new branch)
 
 ## Workflow continues contributions
 
 When you continue to contribute the main codebase (the original repository) may be changed to yours in the meantime.
-goto: [https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) and follow the steps to update your fork (pull and merge from the original or _upstream_ repository)
+Navigate to: [https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) and follow the steps to update your fork (pull and merge from the original or _upstream_ repository)
 
-BTW To see on which branch you are you can run the following command
+_BTW To see on which branch you are you can run the following commands_
 
 ```bash
 git status
 ```
 
-or
+_or_
 
 ```bash
 git branch
 ```
 
-In your local repositoy checkout to the main branch if you are not:
+1. Checkout to main branch if you are not:
 
 ```bash
 git checkout main
 ```
 
-After this you can update your local codebase:
+2. Update local codebase with repo:
 
 ```bash
 git pull
@@ -103,4 +103,4 @@ git pull
 
 I guess this way you don't have to merge your branches after a pull request, because this has been done on the upstream.
 
-Continue your new contibution as in _Workflow first contribution_, starting with a new branch for a new project.
+3. Continue your new contibution as in _Workflow first contribution_, starting with a new branch for a new project.
