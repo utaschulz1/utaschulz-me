@@ -1,0 +1,106 @@
+.navbar {
+  /* display: flex;
+  justify-content: space-between; */
+  background: linear-gradient(
+    103deg,
+    rgba(85, 111, 162, 1) 33%,
+    rgba(129, 149, 190, 0) 50%
+  );
+  transition: background-color 300ms;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.switcher {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.navbar a {
+  text-decoration: none;
+  /* text-align: left; */
+  color: white;
+  font-size: 1rem;
+}
+
+.desktop a {
+  padding: 14px 10px 15px 10px;
+}
+
+.mobile {
+  margin: 0;
+}
+
+.mobile li {
+  margin: 15px 0px;
+}
+
+.mobile a {
+  padding: 8px 10px;
+}
+
+.navbar button:hover,
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.349);
+}
+
+.navbar button:hover {
+  cursor: pointer;
+}
+
+.navbar:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.desktop {
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+
+.icon {
+  border: none;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: left;
+}
+
+.burger {
+  padding: 5px 5px;
+}
+
+.line {
+  stroke: black;
+  stroke-width: 7px;
+  stroke-linecap: round;
+}
+
+@media screen and (min-width: 600px) {
+  .icon {
+    display: none;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 934px) {
+  .switcher {
+    position: fixed;
+    top: 0;
+    right: 10%;
+  }
+}

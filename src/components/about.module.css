@@ -1,0 +1,59 @@
+.aboutWrapper {
+  margin: auto;
+  padding: 20px 30px 0 30px;
+  text-align: center;
+}
+.aboutWrapper h2 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.aboutContentWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutImage {
+  width: 300px;
+  max-width: fit-content;
+  margin: auto;
+}
+
+.icons {
+  margin: 0px 25px;
+}
+
+.followUs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 376px) {
+  .followUs {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 934px) {
+  .aboutWrapper {
+    width: 80%;
+    padding-top: 40px;
+    text-align: left;
+  }
+
+  .aboutContentWrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .aboutContent {
+    width: 60%;
+    padding-right: 20px;
+  }
+  .aboutImage {
+    margin-top: 20px;
+    margin-right: 0px;
+  }
+}

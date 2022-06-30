@@ -1,0 +1,26 @@
+html,
+body,
+#___gatsby {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  /* width: 100vw; */
+  background-color: #000000;
+  /* background-color: #77d6e9; */
+  color: white;
+}
+
+#gatsby-focus-wrapper {
+  margin-right: 0px;
+  height: 100%;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+button:hover {
+  cursor: pointer;
+}

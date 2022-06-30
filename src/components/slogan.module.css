@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Ribeye Marrow";
+  src: url(../fonts/RibeyeMarrow-Regular.ttf);
+}
+.slogan {
+  font-family: "Ribeye Marrow", cursive;
+  color: #ee6556;
+  font-size: x-large;
+  margin: 13px;
+}

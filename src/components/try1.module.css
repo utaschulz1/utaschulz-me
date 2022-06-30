@@ -1,0 +1,104 @@
+/* Fonts */
+/* @font-face {
+  font-family: "Open Sans";
+  src: url(../Fonts/open-sans-regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans Light";
+  src: url(../Fonts/open-sans-light.ttf);
+}
+@font-face {
+  font-family: "Precious Soul";
+  src: url(../Fonts/precious-soul.ttf);
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url(../Fonts/myriad-pro-regular.ttf);
+} */
+/* styles */
+body {
+  font-family: "Open Sans";
+  margin: 0;
+  padding: 0;
+}
+p {
+  text-indent: 2em;
+}
+figure,
+figcaption {
+  display: block;
+}
+.bold {
+  font-weight: bold;
+}
+.dropcap {
+  float: left;
+  font-family: "Open Sans Light";
+  font-size: 2.8em;
+  line-height: 0.77em;
+  padding-top: 0.05em;
+  padding-right: 0.1em;
+}
+.no-indent {
+  text-indent: 0;
+}
+.title {
+  text-align: center;
+  font-family: "Precious Soul";
+  font-variant: small-caps;
+  line-height: 40pt;
+  font-size: 2em;
+}
+.part {
+  text-align: center;
+  font-size: 1em;
+}
+@supports not ((page-break-inside: avoid) and (break-inside: avoid)) {
+  .img-div {
+    -webkit-column-break-inside: avoid;
+  }
+}
+.img-div {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  page-break-before: auto;
+  page-break-inside: avoid;
+  page-break-after: auto;
+  width: 100%;
+  max-width: 30em;
+}
+.img-div-vert {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  page-break-before: auto;
+  page-break-inside: avoid;
+  page-break-after: auto;
+  width: 80%;
+  max-width: 20em;
+}
+figcaption {
+  margin-bottom: 5px;
+  font-size: 0.7em;
+}
+.img {
+  object-fit: contain;
+  width: 100%;
+}
+.top-margin-5 {
+  margin-top: 10px;
+}
+.logo {
+  width: 60%;
+  max-width: 10em;
+}
+.margin-40 {
+  margin: 40px 0;
+}
+.center {
+  text-align: center;
+}
+.russian {
+  font-family: "Myriad Pro";
+}

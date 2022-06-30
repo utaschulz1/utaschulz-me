@@ -1,0 +1,22 @@
+.switcher {
+  border: none;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  text-align: end;
+  padding: 15px 15px;
+  color: white;
+  font-size: 1em;
+}
+
+.menuIcon {
+  margin-right: 10px;
+  fill: #233066;
+}
+
+.langs li {
+  margin: 15px 0px;
+}
+
+.langs a {
+  padding: 8px 10px;
+}

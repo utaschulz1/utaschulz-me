@@ -1,0 +1,72 @@
+.mission-page-wrapper {
+  margin: 20px;
+}
+/* .mission-page-wrapper p {
+  margin: 10px;
+} */
+
+.mission-h1 {
+  margin: 30px;
+  margin-left: 10px;
+}
+
+.mission-h2 {
+  margin: 10px;
+}
+.mission-content,
+.list-1,
+.list-2,
+.list-3 {
+  margin: 10px 10px 40px 10px;
+}
+
+.mission-content a {
+  color: #fff4d5;
+  text-decoration: underline;
+}
+
+.list-1,
+.list-2,
+.list-3 {
+  list-style: none;
+}
+
+.list-1 li,
+.list-2 li,
+.list-3 li {
+  text-indent: -1.67rem;
+  margin-bottom: 5px;
+}
+
+.list-1 li:nth-child(1)::before {
+  content: "🍀 ";
+}
+.list-1 li:nth-child(2)::before {
+  content: "🕐 ";
+}
+.list-1 li:nth-child(3)::before {
+  content: "💰 ";
+}
+.list-1 li:nth-child(4)::before {
+  content: "💚 ";
+}
+.list-1 li:nth-child(5)::before {
+  content: "🙏 ";
+}
+.list-1 li:nth-child(6)::before {
+  content: "💚 ";
+}
+
+.list-2 li::before {
+  content: "🚲 ";
+}
+.list-3 li::before {
+  content: "👍 ";
+}
+
+@media screen and (min-width: 934px) {
+  .mission-page-wrapper {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
