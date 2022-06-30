@@ -29,6 +29,18 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 600,
+              wrapperStyle(image) {
+                let maxImageWidth;
+                if (image.aspectRatio < 1)
+                  maxImageWidth = image.aspectRatio * 600;
+                else maxImageWidth = 600;
+
+                return `max-width: clamp(120px, calc(${
+                  image.aspectRatio
+                }* 80vh), ${
+                  Math.round(maxImageWidth * 10) / 10
+                }px); max-height: 600px;`;
+              },
               showCaptions: false,
               quality: 75,
               withWebp: true,
