@@ -63,13 +63,21 @@ where the 'a' **flag** (a flag adds a feature of the command) means all and the 
 
 6. Now that're done you can update the github repository with your changes:
 
+- if your local branch **does not** exist on the remote run:
+
+```bash
+git push -u origin [branch_name]
+```
+
+- if your local branch **already exist** on the remote run:
+
 ```bash
 git push [branch_name]
 ```
 
 where [branch_name] is the name of the branch you are currently working on
 
-7. Make a **pull request**
+1. Make a **pull request**
    - Navigate to your repository on github.com and make a pull request for your contribution (the new branch)
 
 ## Workflow continues contributions
