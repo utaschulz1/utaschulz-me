@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import Seo from "../components/seo";
 import "../styles/mission.css";
-import Carousel from "../components/carousel";
 
 const Story = () => {
   const { t } = useTranslation();

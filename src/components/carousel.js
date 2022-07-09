@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import { slider } from "./carousel.module.css";
 import CustomImage from "../utils/customImage";
 
-const Carousel = ({ imgNames }) => {
-  // USAGE: <Carousel imgNames={["about.png", "oldshop.jpg"]} />
+const Carousel = ({ imgagesObject }) => {
+  // USAGE: <Carousel imgagesObject={[{name: "about.png", alt: "hello"}, {name: "oldshop.jpg"}]} />
   const width = window.innerWidth ?? 1080;
 
   const settings = {
@@ -22,10 +22,10 @@ const Carousel = ({ imgNames }) => {
     autoplaySpeed: 5000,
   };
 
-  const imgMap = imgNames.map((name, i) => {
+  const imgMap = imgagesObject.map((img, i) => {
     return (
       <div key={i}>
-        <CustomImage name={name} />
+        <CustomImage name={img.name} alt={img.alt} />
       </div>
     );
   });

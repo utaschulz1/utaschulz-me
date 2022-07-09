@@ -9,7 +9,6 @@
 
 a {
   text-decoration: none;
-  /* color: white; */
 }
 
 .post-title a {
@@ -28,11 +27,6 @@ a {
 .post-title {
   margin: 0;
 }
-
-/* .post-title a {
-  text-decoration: none;
-  color: white;
-} */
 
 .post-date {
   margin-top: 3px;
