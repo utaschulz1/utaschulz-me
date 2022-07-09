@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import Seo from "../components/seo";
 import "../styles/mission.css";
+import Carousel from "../components/carousel";
 
 const Story = () => {
   const { t } = useTranslation();
@@ -20,6 +21,7 @@ const Story = () => {
         modified_date="2022-03-22"
       />
       <div className="mission-page-wrapper">
+        <Carousel imgNames={["about.png", "oldshop.jpg"]} />
         <h1 className="mission-h1">
           <Trans>Story</Trans>
         </h1>
