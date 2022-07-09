@@ -21,7 +21,6 @@ const Story = () => {
         modified_date="2022-03-22"
       />
       <div className="mission-page-wrapper">
-        <Carousel imgNames={["about.png", "oldshop.jpg"]} />
         <h1 className="mission-h1">
           <Trans>Story</Trans>
         </h1>
