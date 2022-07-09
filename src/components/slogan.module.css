@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Ribeye Marrow";
   src: url(../fonts/RibeyeMarrow-Regular.ttf);
+  font-display: swap;
 }
 .slogan {
   font-family: "Ribeye Marrow", cursive;
