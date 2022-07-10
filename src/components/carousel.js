@@ -14,7 +14,7 @@ const Carousel = ({ imagesObject }) => {
     arrows: true,
     // arrows: width < 600 ? false : true,
     // fade: true,
-    // lazyLoad: true,
+    lazyLoad: true,
     // vertical: true,
     speed: 2000,
     slidesToShow: 1,
