@@ -35,6 +35,7 @@ const CustomImage = ({ name, alt }) => {
     <GatsbyImage
       image={image.node.gatsbyImageData}
       alt={alt ?? image.node.fixed.originalName.split(".")[0]}
+      loading="eager"
     />
   );
 };
