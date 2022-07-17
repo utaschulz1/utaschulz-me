@@ -6,8 +6,10 @@ import { slider, cStyle } from "./carousel.module.css";
 import CustomImage400 from "../utils/customImage400";
 import CustomImage600 from "../utils/customImage600";
 
-const Carousel = ({ imagesObject, size }) => {
+const Carousel = ({ imagesObject, cardHeight, height }) => {
   // USAGE: <Carousel imagesObject={[{name: "about.png", alt: "hello", title: "Title", text:"This is me", link: "https://weonbikes.com", linkText: "Our website",}, {name: "oldshop.jpg"}]} />
+  // Height is optional for longer images use height={600}, you can also set optional cardHeight for when no image is used.
+
   // const width = window.innerWidth ?? 1080;
 
   const settings = {
@@ -23,11 +25,11 @@ const Carousel = ({ imagesObject, size }) => {
     // autoplay: width < 600 ? false : true,
     // autoplaySpeed: 4000,
   };
-  const format = size || 400;
+  const imgHeight = height || 400;
   // const customFormat = format > 450 ? toString(600) : toString(400)
   const imgMap = imagesObject.map((img, i) => {
     const image =
-      img.name && format < 450 ? (
+      img.name && imgHeight < 450 ? (
         <CustomImage400 name={img.name} alt={img.alt} />
       ) : (
         <CustomImage600 name={img.name} alt={img.alt} />
@@ -42,7 +44,7 @@ const Carousel = ({ imagesObject, size }) => {
       </a>
     );
     const cardStyle = {
-      minHeight: img.height || "20vh",
+      minHeight: cardHeight || "20vh",
       display: "flex",
       flexDirection: "column",
       justifyContent: "center",
