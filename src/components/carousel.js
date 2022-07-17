@@ -5,10 +5,15 @@ import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import { slider, cStyle } from "./carousel.module.css";
 import CustomImage from "../utils/customImage";
 
+<<<<<<< Updated upstream
 const Carousel = ({ imagesObject }) => {
+=======
+const Carousel = ({ imagesObject, height }) => {
+>>>>>>> Stashed changes
   // USAGE: <Carousel imagesObject={[{name: "about.png", alt: "hello", title: "Title", text:"This is me", link: "https://weonbikes.com", linkText: "Our website",}, {name: "oldshop.jpg"}]} />
-  // const width = window.innerWidth ?? 1080;
+  // Height is optional use height={600} for longer pictures
 
+  // const width = window.innerWidth ?? 1080;
   const settings = {
     dots: true,
     arrows: true,
@@ -22,7 +27,11 @@ const Carousel = ({ imagesObject }) => {
     // autoplay: width < 600 ? false : true,
     // autoplaySpeed: 4000,
   };
+<<<<<<< Updated upstream
   // console.log(imgagesObject);
+=======
+  const format = height || 400;
+>>>>>>> Stashed changes
   const imgMap = imagesObject.map((img, i) => {
     const image = img.name && <CustomImage name={img.name} alt={img.alt} />;
     const title = img.title && (
