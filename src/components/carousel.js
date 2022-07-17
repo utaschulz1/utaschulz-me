@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import "../../node_modules/slick-carousel/slick/slick.css";
 import "../../node_modules/slick-carousel/slick/slick-theme.css";
 import { slider, cStyle } from "./carousel.module.css";
-import CustomImage from "../utils/customImage";
+import CustomImage400 from "../utils/customImage400";
+import CustomImage600 from "../utils/customImage600";
 
-const Carousel = ({ imagesObject }) => {
+const Carousel = ({ imagesObject, size }) => {
   // USAGE: <Carousel imagesObject={[{name: "about.png", alt: "hello", title: "Title", text:"This is me", link: "https://weonbikes.com", linkText: "Our website",}, {name: "oldshop.jpg"}]} />
   // const width = window.innerWidth ?? 1080;
 
@@ -22,9 +23,15 @@ const Carousel = ({ imagesObject }) => {
     // autoplay: width < 600 ? false : true,
     // autoplaySpeed: 4000,
   };
-  // console.log(imgagesObject);
+  const format = size || 400;
+  // const customFormat = format > 450 ? toString(600) : toString(400)
   const imgMap = imagesObject.map((img, i) => {
-    const image = img.name && <CustomImage name={img.name} alt={img.alt} />;
+    const image =
+      img.name && format < 450 ? (
+        <CustomImage400 name={img.name} alt={img.alt} />
+      ) : (
+        <CustomImage600 name={img.name} alt={img.alt} />
+      );
     const title = img.title && (
       <h2 style={{ margin: "0.83em 0px" }}>{img.title}</h2>
     );
