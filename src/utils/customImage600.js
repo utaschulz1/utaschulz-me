@@ -2,7 +2,7 @@ import * as React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-const CustomImage = ({ name, alt }) => {
+const CustomImage600 = ({ name, alt }) => {
   const { allImageSharp } = useStaticQuery(graphql`
     query {
       allImageSharp {
@@ -10,7 +10,7 @@ const CustomImage = ({ name, alt }) => {
           node {
             gatsbyImageData(
               blurredOptions: { width: 100 }
-              height: 400
+              height: 600
               quality: 70
               placeholder: BLURRED
               transformOptions: { cropFocus: CENTER, fit: CONTAIN }
@@ -40,4 +40,4 @@ const CustomImage = ({ name, alt }) => {
   );
 };
 
-export default CustomImage;
+export default CustomImage600;
