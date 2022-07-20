@@ -640,7 +640,12 @@ export default BookPage;
 
 export const query = graphql`
   query ($language: String) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: {
+        ns: { in: ["buch", "nav", "subs"] }
+        language: { eq: $language }
+      }
+    ) {
       edges {
         node {
           ns

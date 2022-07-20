@@ -166,7 +166,12 @@ const Story = () => {
 
 export const query = graphql`
   query ($language: String) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: {
+        ns: { in: ["story", "nav", "subs"] }
+        language: { eq: $language }
+      }
+    ) {
       edges {
         node {
           ns

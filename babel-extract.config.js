@@ -1,5 +1,9 @@
 module.exports = {
-  presets: ["babel-preset-gatsby"],
+  presets: [
+    "babel-preset-gatsby",
+    "@babel/preset-react",
+    "@babel/plugin-syntax-jsx",
+  ],
   plugins: [
     [
       "i18next-extract",
@@ -9,7 +13,7 @@ module.exports = {
         keyAsDefaultValue: ["de"],
         useI18nextDefaultValue: ["de"],
         discardOldKeys: true,
-        outputPath: "locales/{{locale}}/{{ns}}.json",
+        outputPath: "locales/extractedTranslations/{{locale}}/{{ns}}.json",
         customTransComponents: [["gatsby-plugin-react-i18next", "Trans"]],
       },
     ],

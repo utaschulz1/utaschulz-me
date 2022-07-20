@@ -159,7 +159,12 @@ const BlogPost = ({ data, pageContext }) => {
 // date(formatString: "MMMM D, YYYY")
 export const query = graphql`
   query ($id: String, $language: String) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
+    locales: allLocale(
+      filter: {
+        ns: { in: ["blog", "nav", "subs"] }
+        language: { eq: $language }
+      }
+    ) {
       edges {
         node {
           ns
