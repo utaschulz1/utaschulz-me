@@ -10,9 +10,9 @@ const Carousel = ({ imagesObject, cardHeight, height }) => {
   // USAGE: <Carousel imagesObject={[{name: "about.png", alt: "hello", title: "Title", text:"This is me", link: "https://weonbikes.com", linkText: "Our website",}, {name: "oldshop.jpg"}]} />
   // Height is optional for longer images use height={600}, you can also set optional cardHeight for when no image is used.
 
-  // const width = window.innerWidth ?? 1080;
+  const width = window.innerWidth ?? 1080;
   const settings = {
-    dots: true,
+    dots: width < 600 ? false : true,
     arrows: true,
     // arrows: width < 600 ? false : true,
     // fade: true,
@@ -34,7 +34,7 @@ const Carousel = ({ imagesObject, cardHeight, height }) => {
         <CustomImage600 name={img.name} alt={img.alt} />
       );
     const title = img.title && (
-      <h2 style={{ margin: "0.83em 0px" }}>{img.title}</h2>
+      <h3 style={{ margin: "0.83em 0px" }}>{img.title}</h3>
     );
     const text = img.text && <p>{img.text}</p>;
     const link = img.link && (
