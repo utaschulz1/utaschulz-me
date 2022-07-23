@@ -26,7 +26,7 @@ const Author = ({ author, link }) => {
         className={profileImage}
         alt={t("Profilbild des Autors")}
         src="../images/authors/uta.jpg"
-        width="200"
+        width={200}
         loading="eager"
       />
       <p className={authorName}>

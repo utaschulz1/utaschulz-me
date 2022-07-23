@@ -1,9 +1,5 @@
 module.exports = {
-  presets: [
-    "babel-preset-gatsby",
-    "@babel/preset-react",
-    "@babel/plugin-syntax-jsx",
-  ],
+  presets: ["babel-preset-gatsby"],
   plugins: [
     [
       "i18next-extract",

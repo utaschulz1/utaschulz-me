@@ -5,6 +5,20 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://weonbikes.com/blog/fahrradrouten-skandinavien/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://weonbikes.com/blog/fahrradrouten-skandinavien/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weonbikes.com/en/blog/bike-routes-scandinavia/"/>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://weonbikes.com/en/blog/bike-routes-scandinavia/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://weonbikes.com/blog/fahrradrouten-skandinavien/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weonbikes.com/en/blog/bike-routes-scandinavia/"/>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://weonbikes.com/blog/fahrradrouten-finnland/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://weonbikes.com/blog/fahrradrouten-finnland/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://weonbikes.com/en/blog/cycle-routes-finland/"/>

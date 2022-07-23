@@ -10,7 +10,8 @@ const Carousel = ({ imagesObject, cardHeight, height }) => {
   // USAGE: <Carousel imagesObject={[{name: "about.png", alt: "hello", title: "Title", text:"This is me", link: "https://weonbikes.com", linkText: "Our website",}, {name: "oldshop.jpg"}]} />
   // Height is optional for longer images use height={600}, you can also set optional cardHeight for when no image is used.
 
-  const width = window.innerWidth ?? 1080;
+  const width = typeof window !== "undefined" ? window.innerWidth : 1080;
+
   const settings = {
     dots: width < 600 ? false : true,
     arrows: true,

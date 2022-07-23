@@ -1,3 +1,5 @@
+// i18next-extract-mark-ns-start home-page
+
 import * as React from "react";
 import { graphql } from "gatsby";
 import Layout from "../components/layout";

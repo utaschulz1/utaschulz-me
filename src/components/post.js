@@ -20,6 +20,8 @@ import {
 const getLocalizedRoute = require("../i18n/getLocalizedRoute");
 
 const BlogPost = ({ data, pageContext }) => {
+  // console.log(data.mdx.body);
+
   const { language } = useI18next();
 
   const navItems = data.mdx.tableOfContents.items;
@@ -108,6 +110,7 @@ const BlogPost = ({ data, pageContext }) => {
 
         <MDXRenderer>{data.mdx.body}</MDXRenderer>
       </article>
+
       <div className={prevNext}>
         {pageContext.previous && (
           <div>
