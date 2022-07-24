@@ -13,11 +13,11 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "extract": "npx babel -f ./babel-extract.config.js -o tmp/chunk.js 'src/**/*.{js,jsx,ts,tsx}' && rm -rf tmp"
+    "extract": "yarn run babel --config-file ./babel-extract.config.js -o tmp/chunk.js 'src/pages/index.js' && rm -rf tmp"
   },
   "dependencies": {
-    "@mdx-js/mdx": "^2.1.2",
-    "@mdx-js/react": "^1.6.22",
+    "@mdx-js/mdx": "v1",
+    "@mdx-js/react": "v1",
     "babel-preset-gatsby": "^2.5.2",
     "gatsby": "^4.5.4",
     "gatsby-plugin-feed": "^4.12.1",
