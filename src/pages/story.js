@@ -54,12 +54,7 @@ const Story = () => {
         </h2>
         <div className="mission-content">
           <p>
-            <Trans>Mit</Trans>{" "}
-            <Link to="/">WeOnBikes.com - Life by bicycle</Link>{" "}
-            <Trans>
-              möchten wir Radfahren als Reisemittel und Verkehrsmittel im Alltag
-              voranbringen.
-            </Trans>
+            <Trans>Alle Infos</Trans>
           </p>
         </div>
 
@@ -70,35 +65,7 @@ const Story = () => {
           <Trans>Wir werden regelmäßig zu verschiedenen Themen posten:</Trans>
         </p>
         <ul className="list-2">
-          <li>
-            <Trans>
-              Fahrradleben - Fahrrad als Lifestyle, Inspiration und
-              Stimmungs-Booster
-            </Trans>
-          </li>
-          <li>
-            <Trans>Fahrradwege in verschiedenen Städten</Trans>
-          </li>
-          <li>
-            <Trans>
-              Fahrrad-Infrastruktur und Stadtentwicklung für aktive Mobilität
-            </Trans>
-          </li>
-          <li>
-            <Trans>Fahrradreparatur und Werkzeug unterwegs</Trans>
-          </li>
-          <li>
-            <Trans>
-              Radtypen wie Mountainbikes, Gravel-Bikes, Trekking-Bikes und
-              Fahrradtechnik, Geometrie
-            </Trans>
-          </li>
-          <li>
-            <Trans>
-              Fahrradtaschen - Bikepacking versus klassisches Radwandern
-            </Trans>
-          </li>
-          <li>
+        <li>
             <Trans>
               Radrouten - Fernradwege und kürzere Fahrradtouren, GPS-Routen
             </Trans>
@@ -116,7 +83,35 @@ const Story = () => {
             <Trans>Bikepacking Cuisine</Trans>
           </li>
           <li>
+            <Trans>Fahrradreparatur und Werkzeug unterwegs</Trans>
+          </li>
+          <li>
+            <Trans>
+              Radtypen wie Mountainbikes, Gravel-Bikes, Trekking-Bikes und
+              Fahrradtechnik, Geometrie
+            </Trans>
+          </li>
+          <li>
+            <Trans>
+              Fahrradtaschen - Bikepacking versus klassisches Radwandern
+            </Trans>
+          </li>
+          <li>
             <Trans>Buchtipps</Trans>
+          </li>
+          <li>
+            <Trans>
+              Fahrradleben - Fahrrad als Lifestyle, Inspiration und
+              Stimmungs-Booster
+            </Trans>
+          </li>
+          <li>
+            <Trans>Fahrradwege in verschiedenen Städten</Trans>
+          </li>
+          <li>
+            <Trans>
+              Fahrrad-Infrastruktur und Stadtentwicklung für aktive Mobilität
+            </Trans>
           </li>
         </ul>
 
