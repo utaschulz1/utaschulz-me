@@ -13,8 +13,7 @@ import {
   heroButton2,
 } from "./hero.module.css";
 
-//import BuyButton from "../utils/buyButton";
-import SevenRoutesDownload from "../../../src/utils/sevenRoutesDownload.js";
+import SevenRoutesDownload from "../utils/sevenRoutesDownload.js";
 
 const getLocalizedRoute = require("../i18n/getLocalizedRoute");
 
@@ -30,16 +29,23 @@ const Hero = () => {
             <Trans>Hero title</Trans>
           </h1>
           <p>
-            <Trans>
-              Hero description
-            </Trans>
+            <Trans>Hero description</Trans>
           </p>
           <div className={heroButtons}>
-            <div className={heroButton1}>
-              <SevenRoutesDownload />
-            </div>
-            {/* <Link className={heroButton2} to={getLocalizedRoute("/book", lng)}> */}
-            <Link className={heroButton2} to={getLocalizedRoute("/blog/7-radwanderwege-in-europa-nord-sued/", lng)}>
+            <SevenRoutesDownload
+              text="GPX herunterladen"
+              color="white"
+              backgroundColor="#ee6556"
+              padding="7px"
+              width="90%"
+            />
+            <Link
+              className={heroButton2}
+              to={getLocalizedRoute(
+                "/blog/7-radwanderwege-in-europa-nord-sued/",
+                lng
+              )}
+            >
               <Trans>Hero blue button</Trans>
             </Link>
           </div>
@@ -48,9 +54,7 @@ const Hero = () => {
               “
             </div>
             <p style={{ lineHeight: "25px" }}>
-              <Trans>
-                Quote
-              </Trans>
+              <Trans>Quote</Trans>
             </p>
             <div className={quotes} style={{ marginTop: "-30px" }}>
               ”

@@ -16,22 +16,18 @@
 .heroButtons {
   margin: 40px 0px 40px 0px;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
 }
 
 .heroButtons a {
   text-decoration: none;
-  padding: 5px 15px 5px 15px;
-  align-self: center;
+  padding: 5px;
   text-align: center;
 }
 
-.heroButton1 {
-  background-color: #ee6556;
-  color: white;
-}
-
 .heroButton2 {
+  width: 85%;
   color: #0d4880;
   background-color: #e7ecffbb;
   border: 2px solid #0d4880;
@@ -55,6 +51,21 @@
   width: 200px;
   max-width: fit-content;
   margin: 39px auto;
+}
+
+@media screen and (min-width: 320px) {
+  .heroButtons {
+    flex-direction: row;
+  }
+
+  .heroButtons a {
+    padding: 13px;
+    align-self: center;
+  }
+  
+  .heroButton2 {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 620px) {
@@ -84,6 +95,15 @@
   }
 
   .heroButtons {
-    justify-content: space-between;
+    flex-direction: column;
   }
+
+  .heroButtons a {
+    align-self: flex-start;
+    padding: 5px 0px;
+  }
+
+  .heroButton2 {
+    width: 89%;
+  }  
 }
