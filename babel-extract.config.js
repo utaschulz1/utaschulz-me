@@ -2,7 +2,7 @@ module.exports = {
   presets: ["babel-preset-gatsby"],
   plugins: [
     [
-      "i18next-extract",
+      "babel-plugin-i18next-extract",
       {
         keySeparator: null,
         nsSeparator: null,
