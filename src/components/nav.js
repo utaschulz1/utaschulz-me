@@ -18,7 +18,6 @@ const getLocalizedRoute = require("../i18n/getLocalizedRoute");
 
 // Array with menu links
 const navItems = ["", "Blog", "Buch", "Story", "FAQ"];
-// const navItems = ["Buch", "Blog", "Story", "FAQ", ""];
 
 const Nav = () => {
   const { language } = useI18next();
@@ -72,8 +71,6 @@ const Nav = () => {
                 <Link
                   to={getLocalizedRoute("/" + link.toLocaleLowerCase(), lng)}
                 >
-                  {/* <Trans>WEONBIKES.COM</Trans> */}
-                  {/* <Trans>Home</Trans> */}
                   <StaticImage
                     className={img}
                     alt="home"
@@ -107,7 +104,6 @@ const Nav = () => {
                 <Link
                   to={getLocalizedRoute("/" + link.toLocaleLowerCase(), lng)}
                 >
-                  {/* <Trans>WEONBIKES.COM</Trans> */}
                   <StaticImage
                     className={img}
                     alt="home"

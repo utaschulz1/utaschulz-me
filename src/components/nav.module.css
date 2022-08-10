@@ -88,6 +88,10 @@
   stroke-linecap: round;
 }
 
+.switcher a:hover {
+  background-color: rgba(240, 248, 255, 0);
+}
+
 @media screen and (min-width: 600px) {
   .icon {
     display: none;
