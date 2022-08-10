@@ -67,9 +67,6 @@ const Story = () => {
             Themen posten:
           </Trans>
         </h2>
-        <p className="mission-h2">
-          <Trans>Wir werden regelmäßig zu verschiedenen Themen posten:</Trans>
-        </p>
         <ul className="list-2">
           <li>
             <Trans>

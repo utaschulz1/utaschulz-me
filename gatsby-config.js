@@ -15,6 +15,7 @@ module.exports = {
   },
   trailingSlash: "always",
   plugins: [
+    `gatsby-plugin-preact`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     "gatsby-plugin-image",
