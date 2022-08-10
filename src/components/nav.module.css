@@ -34,6 +34,11 @@
   padding: 14px 10px 15px 10px;
 }
 
+.img {
+  margin-top: -8px;
+  /* padding-top: 0px; */
+}
+
 .mobile {
   margin: 0;
 }
