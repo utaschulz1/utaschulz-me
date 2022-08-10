@@ -60,13 +60,15 @@ const Story = () => {
             </Trans>
           </p>
         </div>
-
         <h2 className="mission-h2">
+          <Trans>Wie du das bekommst</Trans>
+        </h2>
+        <p className="mission-h2">
           <Trans>
             Abonniere unseren Newsletter! Wir werden regelmäßig zu verschiedenen
             Themen posten:
           </Trans>
-        </h2>
+        </p>
         <ul className="list-2">
           <li>
             <Trans>

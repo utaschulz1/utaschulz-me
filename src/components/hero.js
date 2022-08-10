@@ -78,7 +78,7 @@ const Hero = () => {
               src="../images/hero-7-routen-DE.jpg"
               placeholder="blurred"
               loading="eager"
-              width={600}
+              width={400}
             />
           )}
           {language === "en" && (
@@ -87,7 +87,7 @@ const Hero = () => {
               src="../images/hero-7-routes-EN.jpg"
               placeholder="blurred"
               loading="eager"
-              width={600}
+              width={400}
             />
           )}
         </div>

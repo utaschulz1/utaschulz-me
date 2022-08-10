@@ -50,7 +50,8 @@
 .heroImage {
   width: 200px;
   max-width: fit-content;
-  margin: 39px auto;
+  /* margin: 39px auto; */
+  margin: 50px auto;
 }
 
 @media screen and (min-width: 320px) {
@@ -85,13 +86,14 @@
     flex-direction: row;
     text-align: left;
   }
-
+  
   .heroContent {
     width: 30%;
   }
-
+  
   .heroImage {
-    margin-top: 10px;
+    margin-top: 20px;
+    width: 350px;
   }
 
   .heroButtons {
