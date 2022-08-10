@@ -26,10 +26,16 @@ const Hero = () => {
       <div className={heroContentWrapper}>
         <div className={heroContent}>
           <h1>
-            <Trans>Hero title</Trans>
+            <Trans>Radfernwege Nord-Süd durch Europa</Trans>
           </h1>
           <p>
-            <Trans>Hero description</Trans>
+            <Trans>
+              Die 7 beliebtesten Fahrradrouten von Norden nach Süden durch
+              Europa. Willst du Radwandern von Kap zu Kap, durch Hauptstädte,
+              über Berg und Land, von der Nordsee bis zum Mittelmeer, Pilgern
+              auf dem Jakobsweg, nach Trondheim oder Rom? Hier findest du die
+              Routen und nützliche Tipps.
+            </Trans>
           </p>
           <div className={heroButtons}>
             <SevenRoutesDownload
@@ -46,7 +52,7 @@ const Hero = () => {
                 lng
               )}
             >
-              <Trans>Hero blue button</Trans>
+              <Trans>Weiterlesen</Trans>
             </Link>
           </div>
           <div className={heroReview}>
@@ -54,7 +60,11 @@ const Hero = () => {
               “
             </div>
             <p style={{ lineHeight: "25px" }}>
-              <Trans>Quote</Trans>
+              <Trans>
+                Mir ist es eingefallen, während ich Fahrrad fuhr.
+                <br />
+                (Albert Einstein)
+              </Trans>
             </p>
             <div className={quotes} style={{ marginTop: "-30px" }}>
               ”

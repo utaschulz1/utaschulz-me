@@ -48,40 +48,27 @@ const Project = () => {
           <Link to={getLocalizedRoute("/buch/", lng)}>book</Link>.
         </p>
       )}
-      {language === "de" && (
-        <p>
+      <p>
+        <Trans>
           <strong>2023 geht die Reise weiter</strong>: Einmal{" "}
           <strong>von Nord nach Süd durch Europa</strong>, vom Nordkap zum Cabo
           de São Vincente.
-        </p>
-      )}
-      {language === "en" && (
-        <p>
-          <strong>In 2023 the trip will continue</strong>: this time from north
-          to south, from the North Cape to Cape St. Vincent.
-        </p>
-      )}
+        </Trans>
+      </p>
       <p>
         <Trans>
           Bis dahin erwartet uns eine aufregende Reiseplanung, die wir mit euch
           teilen möchten.
         </Trans>
       </p>
-      {language === "de" && (
-        <p>
+      <p>
+        <Trans>
           Deshalb haben wir WeOnBikes in Leben gerufen. Auf unserer Website
-          bieten wir nützliche Informationen zum Thema{" "}
+          findest du nützliche Informationen zum Thema{" "}
           <strong>Fahrradleben und Radwandern</strong>. Lass dich inspirieren
           und mach mit!
-        </p>
-      )}
-      {language === "en" && (
-        <p>
-          That's why we created WeOnBikes. On our website we offer useful
-          information about <strong>cycling life and cycling tours</strong>. Get
-          inspired and join in!
-        </p>
-      )}
+        </Trans>
+      </p>
       <div className={projectButtons}>
         <div className={projectButton1}>
           <Subscribe margin="0px" />
