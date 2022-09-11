@@ -8,7 +8,7 @@ const BuyButton = (props) => {
   const link =
     language === "de"
       ? "https://www.bod.de/buchshop/catalogsearch/result/?q=Uta+Schulz"
-      : "https://www.amazon.com/Moscow-North-Cape-bycicle-journal-ebook/dp/B09SGPG1VC/ref=sr_1_1?keywords=uta+schulz&qid=1645447867&s=digital-text&sr=1-1";
+      : "https://www.amazon.com/Uta-Schulz/e/B09SVCVM7H/ref=aufs_dp_fta_dsk";
 
   const style = {
     margin: props?.margin || "0",
