@@ -4,8 +4,8 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "Bebas Neue";
-  src: url(../fonts/BebasNeue-Regular.ttf);
+  font-family: "HussarEkologiczne2";
+  src: url(../fonts/HussarEkologiczne2.otf);
   font-display: swap;
 }
 
@@ -105,8 +105,9 @@ blockquote {
 
 .article h2,
 .article h3 {
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 0.16em;
+  font-family: "HussarEkologiczne2", cursive;
+  font-size: 1.3em;
+  letter-spacing: 0.1em;
   color: #e7ecff;
 }
 
