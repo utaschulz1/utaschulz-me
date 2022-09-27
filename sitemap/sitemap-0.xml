@@ -5,6 +5,20 @@
   xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
   xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
+    <loc>https://weonbikes.com/blog/radwandern-auf-nordkap-tarifa-route/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://weonbikes.com/blog/radwandern-auf-nordkap-tarifa-route/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weonbikes.com/en/blog/cycletouring-the-north-cape-tarifa-route/"/>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://weonbikes.com/en/blog/cycletouring-the-north-cape-tarifa-route/</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://weonbikes.com/blog/radwandern-auf-nordkap-tarifa-route/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://weonbikes.com/en/blog/cycletouring-the-north-cape-tarifa-route/"/>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://weonbikes.com/blog/radwandern-auf-northcape4000-Routen/</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://weonbikes.com/blog/radwandern-auf-northcape4000-Routen/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://weonbikes.com/en/blog/cycling-on-northcape4000-routes/"/>
