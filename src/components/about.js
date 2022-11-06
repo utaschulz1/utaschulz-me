@@ -10,7 +10,7 @@ import {
 } from "./about.module.css";
 import { projectButtons, projectButton1 } from "./project.module.css";
 
-const About = () => {
+const About = (params) => {
   const { t } = useTranslation();
 
   return (
@@ -43,25 +43,25 @@ const About = () => {
               consideration?
             </Trans>
           </p>
-          {/* <div className={followUs}> */}
-          <div className={projectButtons}>
-            <a
-              className={projectButton1}
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Questionnaire for software producers
-            </a>
-          </div>
         </div>
         <StaticImage
           className={aboutImage}
-          alt={t(
-            "Uta und Menno fahren im Sonnenschein auf einem steinigen Pfad an der Küste der Barentssee auf dem Fahrrad."
-          )}
-          src="../images/about.png"
+          src="../images/thesis-model-software-producers.jpg"
+          placeholder="blurred"
+          loading="lazy"
+          width={600}
+          alt={t("thesis-model-software-producers.")}
         />
+      </div>
+      <div className={projectButtons}>
+        <a
+          className={projectButton1}
+          href={params.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Trans>Questionnaire for software producers</Trans>
+        </a>
       </div>
     </div>
   );

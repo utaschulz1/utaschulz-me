@@ -3,34 +3,30 @@ import { StaticImage } from "gatsby-plugin-image";
 import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next";
 
 import {
-  heroWrapper,
+  title,
   heroContentWrapper,
   heroImage,
   heroContent,
-  // heroReview,
-  // quotes,
   heroButtons,
   heroButton1,
   heroButton2,
 } from "./hero.module.css";
 
-// import SevenRoutesDownload from "../utils/sevenRoutesDownload.js";
-
 const getLocalizedRoute = require("../i18n/getLocalizedRoute");
 
-const Hero = () => {
+const Hero = (params) => {
   const { language } = useI18next();
   const lng = language;
 
   return (
-    <div className={heroWrapper}>
+    <div>
+      <h1 className={title}>
+        <Trans>
+          How Documentation Portal UX Factors Impact Content Creation
+        </Trans>
+      </h1>
       <div className={heroContentWrapper}>
         <div className={heroContent}>
-          <h1>
-            <Trans>
-              How Documentation Portal UX Factors Impact Content Creation
-            </Trans>
-          </h1>
           <p>
             <Trans>
               Which UX factors are relevant for documentation Portals? What is
@@ -39,23 +35,14 @@ const Hero = () => {
             </Trans>
           </p>
           <div className={heroButtons}>
-            {/* <SevenRoutesDownload
-                text="Questionnaire for software producers" //Link to https://forms.clickup.com/24337696/f/q6q90-3800/3FPLWDGZVYAAN1V5BL
-                color="white"
-                backgroundColor="#ee6556"
-                padding="7px"
-                width="90%"
-              /> */}
-
-            <Link
+            <a
               className={heroButton1}
-              to={getLocalizedRoute(
-                "/", //to page Hauptkonzepte/gatsmain-concepts
-                lng
-              )}
+              href={params.url}
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Trans>Questionnaire for software producers</Trans>
-            </Link>
+            </a>
             <Link
               className={heroButton2}
               to={getLocalizedRoute(
@@ -73,7 +60,7 @@ const Hero = () => {
             src="../images/thesis-model.png"
             placeholder="blurred"
             loading="eager"
-            width={1200}
+            width={700}
           />
         </div>
       </div>

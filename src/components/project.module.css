@@ -1,6 +1,6 @@
 .projectWrapper {
   text-align: center;
-  margin: auto;
+  margin: 60px auto;
   padding: 0 30px 0 30px;
 }
 
@@ -8,9 +8,6 @@
   font-size: 2em;
   margin: 0.67em 0;
 }
-
-/* .projectWrapper a {
-} */
 
 .projectButtons {
   margin: 40px 0px 40px 0px;

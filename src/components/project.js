@@ -1,18 +1,12 @@
 import * as React from "react";
-import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next";
+import { Trans } from "gatsby-plugin-react-i18next";
 import {
   projectWrapper,
   projectButtons,
   projectButton1,
 } from "./project.module.css";
-import Subscribe from "../utils/subscribe";
 
-const getLocalizedRoute = require("../i18n/getLocalizedRoute");
-
-const Project = () => {
-  // const { t } = useTranslation();
-  const { language } = useI18next();
-  const lng = language;
+const Project = (params) => {
   return (
     <div className={projectWrapper}>
       <h2>
@@ -64,9 +58,14 @@ const Project = () => {
         </Trans>
       </p>
       <div className={projectButtons}>
-        <Link className={projectButton1} to={getLocalizedRoute("/", lng)}>
-          Questionnaire for software producers
-        </Link>
+        <a
+          className={projectButton1}
+          href={params.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Trans>Questionnaire for software producers</Trans>
+        </a>
       </div>
     </div>
   );
