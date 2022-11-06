@@ -10,24 +10,17 @@ import About from "../components/about";
 import NordcapeToPortugal from "../components/nordcapeToPortugal";
 import MoscowToNordcape from "../components/moscowToNordcape";
 import TakeAction from "../components/takeAction";
-import { Helmet } from "react-helmet";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <Helmet>
-        <meta
-          name="google-site-verification"
-          content="z-S1FqEuF2tv0iqBlHUOdNqa2AxgL23wJ5czteELOWA"
-        />
-      </Helmet>
-      <Seo />
+      {/* <Seo /> */}
       <Hero />
       <Project />
-      <About />
-      <NordcapeToPortugal />
-      <MoscowToNordcape />
-      <TakeAction />
+      {/* <About /> */}
+      {/* <NordcapeToPortugal /> */}
+      {/* <MoscowToNordcape /> */}
+      {/* <TakeAction /> */}
     </Layout>
   );
 };

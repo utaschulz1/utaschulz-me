@@ -9,25 +9,29 @@
   margin: 0.67em 0;
 }
 
-.projectWrapper a {
-  color: white;
-}
+/* .projectWrapper a {
+} */
 
 .projectButtons {
   margin: 40px 0px 40px 0px;
   display: flex;
   justify-content: center;
-  /* text-align: center; */
 }
 
 .projectButtons a {
+  color: white;
   text-decoration: none;
   padding: 5px 15px;
   align-self: center;
+  border-radius: 10px;
 }
 
 .projectButton1 {
-  margin-right: 15px;
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #2174ae;
+  border: 2px solid #0d6db1;
 }
 
 .projectButton2 {

@@ -1,11 +1,11 @@
 import * as React from "react";
-import { useI18next } from "gatsby-plugin-react-i18next";
-import { wrapper, footer, top, bottom, mailto, rss } from "./footer.module.css";
+// import { useI18next } from "gatsby-plugin-react-i18next";
+import { wrapper, footer, top, bottom, mailto } from "./footer.module.css";
 import SocialMediaLinks from "../utils/socialMediaLinks";
 import Subscribe from "../utils/subscribe";
 
 const Footer = () => {
-  const { language } = useI18next();
+  // const { language } = useI18next();
 
   return (
     <footer className={wrapper}>
@@ -15,7 +15,8 @@ const Footer = () => {
           <a href="mailto:info@utaschulz.me" className={mailto}>
             info@utaschulz.me
           </a>
-          <Subscribe />
+          {/* <Subscribe /> */}
+          <SocialMediaLinks />
         </div>
         <hr />
         <div className={bottom}>
@@ -27,8 +28,8 @@ const Footer = () => {
             rel="noopener noreferrer"
           >
             site: Menno van Balen
-          </a> */}
-          {/* {language === "de" && (
+          </a>
+          {language === "de" && (
             <a className={rss} href="/rss.xml" hrefLang={language}>
               RSS
             </a>
@@ -37,8 +38,8 @@ const Footer = () => {
             <a className={rss} href="/en/rss.xml" hrefLang={language}>
               RSS
             </a>
-          )} */}
-          <SocialMediaLinks />
+          )}
+          <SocialMediaLinks /> */}
         </div>
       </div>
     </footer>
