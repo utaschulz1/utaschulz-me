@@ -1,6 +1,6 @@
 .projectWrapper {
   text-align: center;
-  margin: auto;
+  margin: 60px auto;
   padding: 0 30px 0 30px;
 }
 
@@ -9,30 +9,30 @@
   margin: 0.67em 0;
 }
 
-.projectWrapper a {
-  color: white;
-}
-
 .projectButtons {
   margin: 40px 0px 40px 0px;
+  text-align: center;
   display: flex;
   justify-content: center;
-  /* text-align: center; */
 }
 
 .projectButtons a {
+  color: white;
   text-decoration: none;
-  padding: 5px 15px;
+  padding: 10px;
   align-self: center;
+  border-radius: 10px;
 }
 
 .projectButton1 {
-  margin-right: 15px;
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #2174ae;
+  border: 2px solid #0d6db1;
 }
 
 .projectButton2 {
-  /* color: white;
-  border: 2px solid white; */
   color: #0d4880;
   background-color: #e7ecffbb;
   border: 2px solid #0d4880;
