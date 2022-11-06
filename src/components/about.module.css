@@ -3,40 +3,25 @@
   padding: 20px 30px 0 30px;
   text-align: center;
 }
+
 .aboutWrapper h2 {
+  text-align: center;
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 .aboutContentWrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
 }
 
 .aboutImage {
-  width: 300px;
+  width: 500px;
   max-width: fit-content;
   margin: auto;
 }
 
-.icons {
-  margin: 0px 25px;
-}
-
-.followUs {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media screen and (min-width: 376px) {
-  .followUs {
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 934px) {
+@media screen and (min-width: 1000px) {
   .aboutWrapper {
     width: 80%;
     padding-top: 40px;

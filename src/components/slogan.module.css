@@ -1,11 +1,6 @@
-@font-face {
-  font-family: "Ribeye Marrow";
-  src: url(../fonts/RibeyeMarrow-Regular.ttf);
-  font-display: swap;
-}
 .slogan {
   font-family: "Arial";
-  color: #f3e4e2;
+  color: #cd7020;
   font-size: x-large;
   margin: 13px;
 }

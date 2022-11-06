@@ -1,0 +1,21 @@
+.wrapper {
+  text-align: center;
+  margin: 60px auto;
+  padding: 0 30px 0 30px;
+  background-color: rgba(141, 141, 141, 0.321);
+  border-radius: 20px;
+}
+
+.container {
+  padding: 30px;
+}
+
+.container h2 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.img {
+  width: 200px;
+  border-radius: 50%;
+}

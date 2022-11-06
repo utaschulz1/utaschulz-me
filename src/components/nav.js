@@ -1,46 +1,46 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import { Link, Trans, useI18next } from "gatsby-plugin-react-i18next";
+// import { useState, useEffect } from "react";
+// import { StaticImage } from "gatsby-plugin-image";
+// import { useI18next } from "gatsby-plugin-react-i18next";
 import LanguageSwitcher from "./languageSwitcher";
 import {
-  desktop,
-  mobile,
+  // desktop,
+  // mobile,
   navbar,
-  burger,
-  line,
-  icon,
-  img,
+  // burger,
+  // line,
+  // icon,
+  // img,
   switcher,
 } from "./nav.module.css";
 
-const getLocalizedRoute = require("../i18n/getLocalizedRoute");
+// const getLocalizedRoute = require("../i18n/getLocalizedRoute");
 
 // Array with menu links
-const navItems = ["Home"];
+// const navItems = [""];
 //const navItems = ["", "Blog", "Buch", "Story", "FAQ"];
 
 const Nav = () => {
-  const { language } = useI18next();
-  const lng = language;
+  // const { language } = useI18next();
+  // const lng = language;
 
-  const [showMenu, setShowMenu] = useState(false);
+  // const [showMenu, setShowMenu] = useState(false);
 
-  const handleClick = () => {
-    setShowMenu(!showMenu);
-  };
+  // const handleClick = () => {
+  //   setShowMenu(!showMenu);
+  // };
 
-  useEffect(() => {
-    const handlescroll = () => {
-      if (showMenu) setShowMenu(false);
-    };
-    window.addEventListener("scroll", handlescroll);
-    return () => window.removeEventListener("scroll", handlescroll);
-  }, [showMenu]);
+  // useEffect(() => {
+  //   const handlescroll = () => {
+  //     if (showMenu) setShowMenu(false);
+  //   };
+  //   window.addEventListener("scroll", handlescroll);
+  //   return () => window.removeEventListener("scroll", handlescroll);
+  // }, [showMenu]);
 
   return (
     <nav className={navbar}>
-      <button className={icon} aria-label="menu" onClick={handleClick}>
+      {/* <button className={icon} aria-label="menu" onClick={handleClick}>
         <svg
           className={burger}
           style={{ display: !showMenu ? "block" : "none" }}
@@ -62,9 +62,9 @@ const Nav = () => {
           <line className={line} x1={"20"} y1={"20"} x2={"60"} y2={"60"}></line>
           <line className={line} x1={"60"} y1={"20"} x2={"20"} y2={"60"}></line>
         </svg>
-      </button>
+      </button> */}
       {/* Nav items desktop */}
-      <ul className={desktop}>
+      {/* <ul className={desktop}>
         {navItems.map((link) => {
           if (link === "") {
             return (
@@ -94,10 +94,10 @@ const Nav = () => {
             );
           }
         })}
-      </ul>
+      </ul> */}
 
       {/* Nav items mobile */}
-      <ul className={mobile} style={{ display: showMenu ? "block" : "none" }}>
+      {/* <ul className={mobile} style={{ display: showMenu ? "block" : "none" }}>
         {navItems.map((link) => {
           if (link === "") {
             return (
@@ -127,7 +127,7 @@ const Nav = () => {
             );
           }
         })}
-      </ul>
+      </ul> */}
       <div className={switcher}>
         <LanguageSwitcher />
       </div>
