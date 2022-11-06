@@ -17,7 +17,8 @@ import {
 const getLocalizedRoute = require("../i18n/getLocalizedRoute");
 
 // Array with menu links
-const navItems = ["", "Blog", "Buch", "Story", "FAQ"];
+const navItems = ["Home"];
+//const navItems = ["", "Blog", "Buch", "Story", "FAQ"];
 
 const Nav = () => {
   const { language } = useI18next();

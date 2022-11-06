@@ -11,9 +11,9 @@ const Footer = () => {
     <footer className={wrapper}>
       <div className={footer}>
         <div className={top}>
-          <p>&copy; weonbikes.com</p>
-          <a href="mailto:info@weonbikes.com" className={mailto}>
-            info@weonbikes.com
+          <p>&copy; utaschulz.me</p>
+          <a href="mailto:info@utaschulz.me" className={mailto}>
+            info@utaschulz.me
           </a>
           <Subscribe />
         </div>
@@ -28,7 +28,7 @@ const Footer = () => {
           >
             site: Menno van Balen
           </a> */}
-          {language === "de" && (
+          {/* {language === "de" && (
             <a className={rss} href="/rss.xml" hrefLang={language}>
               RSS
             </a>
@@ -37,7 +37,7 @@ const Footer = () => {
             <a className={rss} href="/en/rss.xml" hrefLang={language}>
               RSS
             </a>
-          )}
+          )} */}
           <SocialMediaLinks />
         </div>
       </div>

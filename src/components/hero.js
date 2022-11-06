@@ -13,6 +13,7 @@ import {
   heroButton2,
 } from "./hero.module.css";
 
+
 import SevenRoutesDownload from "../utils/sevenRoutesDownload.js";
 
 const getLocalizedRoute = require("../i18n/getLocalizedRoute");
@@ -26,56 +27,52 @@ const Hero = () => {
       <div className={heroContentWrapper}>
         <div className={heroContent}>
           <h1>
-            <Trans>Radfernwege Nord-Süd durch Europa</Trans>
+            <Trans>Wie UX-Faktoren in CDPs die Content-Erstellung beeinflussen</Trans>
           </h1>
           <p>
             <Trans>
-              Die 7 beliebtesten Fahrradrouten von Norden nach Süden durch
-              Europa. Willst du Radwandern von Kap zu Kap, durch Hauptstädte,
-              über Berg und Land, von der Nordsee bis zum Mittelmeer, Pilgern
-              auf dem Jakobsweg, nach Trondheim oder Rom? Hier findest du die
-              Routen und nützliche Tipps.
+            Welche UX-Faktoren sind für Conten Delivery Portale relevant? Welchen Einfluss haben diese UX-Faktoren auf die Modularisierung und Klassifizierung von Content im CCMS?
             </Trans>
           </p>
           <div className={heroButtons}>
-            <SevenRoutesDownload
-              text="GPX herunterladen"
+            { <SevenRoutesDownload
+              text="Questionnaire for software producers" //Link to 
               color="white"
               backgroundColor="#ee6556"
               padding="7px"
               width="90%"
-            />
+            /> }
             <Link
               className={heroButton2}
               to={getLocalizedRoute(
-                "/blog/7-radwanderwege-in-europa-nord-sued/",
+                "/blog/7-radwanderwege-in-europa-nord-sued/",//to page Hauptkonzepte/main-concepts
                 lng
               )}
             >
-              <Trans>Weiterlesen</Trans>
+              <Trans>Concepts</Trans>
             </Link>
           </div>
           <div className={heroReview}>
-            <div className={quotes} style={{ marginBottom: "-70px" }}>
+            {/* <div className={quotes} style={{ marginBottom: "-70px" }}>
               “
             </div>
-            <p style={{ lineHeight: "25px" }}>
+            {/* <p style={{ lineHeight: "25px" }}>
               <Trans>
                 Mir ist es eingefallen, während ich Fahrrad fuhr.
                 <br />
                 (Albert Einstein)
               </Trans>
-            </p>
-            <div className={quotes} style={{ marginTop: "-30px" }}>
+            </p> */}
+            {/*<div className={quotes} style={{ marginTop: "-30px" }}>
               ”
-            </div>
+          </div> */}
           </div>
         </div>
         <div className={heroImage}>
           {language === "de" && (
             <StaticImage
-              alt="7 Routen von Norden nach Süden durch Europa"
-              src="../images/hero-7-routen-DE.jpg"
+              alt="UX factors of documentation portals for content structure"
+              src="../images/thesis-model.png"
               placeholder="blurred"
               loading="eager"
               width={400}
@@ -83,8 +80,8 @@ const Hero = () => {
           )}
           {language === "en" && (
             <StaticImage
-              alt="7 routes from north to south through Europe"
-              src="../images/hero-7-routes-EN.jpg"
+              alt="UX factors of documentation portals for content structure"
+              src="../images/thesis-model.png"
               placeholder="blurred"
               loading="eager"
               width={400}

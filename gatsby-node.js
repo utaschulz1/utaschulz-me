@@ -107,7 +107,7 @@ exports.onCreatePage = ({ page, actions }) => {
     return;
   }
 
-  const localizedPath = getLocalizedRoute(originalPath, language);
+    const localizedPath = getLocalizedRoute(originalPath, language);
   deletePage(page);
 
   createPage({

@@ -3,7 +3,7 @@
   justify-content: space-between; */
   background: linear-gradient(
     103deg,
-    rgba(85, 111, 162, 1) 33%,
+    rgb(0, 0, 0) 33%,
     rgba(129, 149, 190, 0) 50%
   );
   transition: background-color 300ms;

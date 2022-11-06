@@ -12,30 +12,30 @@ const style = {
 const SocialMediaLinks = () => {
   return (
     <div>
-      <a
+      {/* <a
         href="https://www.youtube.com/channel/UCsfAAH-YLEhkwrhZKM3R-Jw"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="youtube"
       >
         <YoutubeIcon style={style} />
-      </a>
-      <a
+      </a> */}
+      {/* <a
         href="https://www.facebook.com/weonbikes"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="facebook"
       >
         <FacebookIcon style={style} />
-      </a>
-      <a
+      </a> */}
+      {/* <a
         href="https://www.instagram.com/weonbikes_on_insta/"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="instagram"
       >
         <InstagramIcon style={style} />
-      </a>
+      </a> */}
     </div>
   );
 };

@@ -233,7 +233,7 @@ const SEO = ({
         "@type": "ListItem",
         position: 2,
         name: t(
-          "WeOnBikes | Blog, Erfahrungen zu Radwandern, Radrouten und Fahrradreiseplanung"
+          "Uta Schulz | TCLoc Master Theses Research"
         ),
         item: siteUrl + posTwoslug,
       },
