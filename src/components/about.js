@@ -16,15 +16,11 @@ const About = (params) => {
   return (
     <div className={aboutWrapper}>
       <h2>
-        <Trans>Wer hier reist und schreibt</Trans>
+        <Trans>For Documentation Portal or CCMS Software Producers</Trans>
       </h2>
       <div className={aboutContentWrapper}>
         <div className={aboutContent}>
-          <p>
-            <Trans>
-            For Documentation Portal or CCMS Software Producers
-            </Trans>
-          </p>
+          
           <p>
             <Trans>
               In a documentation portal, how do we fulfil these user needs? Are
