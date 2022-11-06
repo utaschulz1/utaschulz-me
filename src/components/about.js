@@ -28,30 +28,17 @@ const About = () => {
           </p>
           <p>
             <Trans>
-              Wir wohnen in Portugal, ganz in der Nähe von Lissabon und fahren
-              bei jeder Gelegenheit Fahrrad. Ein Auto besitzen wir gar nicht.
+            Findability and context are important quality features of content. Findability is related to UX factors like ease of use, intuitiveness, efficiency. The right context of information is related to  UX factors like relevancy, helpfulness, completeness, safety. 
             </Trans>
           </p>
           <p>
             <Trans>
-              Als technische Übersetzerin und als Software Developer arbeiten
-              wir freiberuflich zu Hause.
+            In a documentation portal, how do we fulfil these user needs? Are they built into the content model of the CCMS? Is it a combination of technologies that get's it right?
             </Trans>
           </p>
           <p>
             <Trans>
-              Alle paar Jahre steht uns der Sinn nach einer langen Reise, einem
-              richtigen Abenteuer eben. Raus aus dem Trott und rauf aufs Rad.
-            </Trans>
-          </p>
-          <p>
-            <Trans>
-              WeOnBikes.com – Life by bicycle – ist unser neues Projekt, mit dem
-              wir uns auf die nächste{" "}
-              <strong>Fahrradtour von Nord nach Süd</strong> durch Europa
-              vorbereiten. Wir möchten die Erfahrungen, die wir dabei machen,
-              mit allen teilen, die sich für Bikepacking interessieren und
-              wissen möchten, wie man eine solche Reise angeht.
+            For a user-friendly documentation portal, to what extend does the content model need to take the documentation portal output into consideration?
             </Trans>
           </p>
           <div className={followUs}>
