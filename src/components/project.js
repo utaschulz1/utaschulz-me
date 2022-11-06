@@ -31,12 +31,12 @@ const Project = () => {
       
       <p>
         <Trans>
-          How UX factors impact modularization and classification of content in CCMS is therefore the topic of my research.
+        How UX factors in documentation portals impact modularization and classification of content in CCMS is therefore the topic of my research.
         </Trans>
       </p>
       <p>
         <Trans>
-          Below you will find questionnaires that help explore the intertwined relationships between documentation portal software, users, content, content producers and software producers regarding UX factors and content models.
+        Below you will find questionnaires that help explore the relationships between documentation portal software, users, content, content producers and software producers regarding UX factors and content models.
         </Trans>
       </p>
       <p>

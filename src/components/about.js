@@ -23,7 +23,7 @@ const About = () => {
         <div className={aboutContent}>
           <p>
             <Trans>
-              Wir, das sind Uta aus Deutschland und Menno aus den Niederlanden.
+            For Documentation Portal or CCMS Software Producers
             </Trans>
           </p>
           <p>
