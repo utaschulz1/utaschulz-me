@@ -17,15 +17,11 @@ const About = () => {
   return (
     <div className={aboutWrapper}>
       <h2>
-        <Trans>Wer hier reist und schreibt</Trans>
+        <Trans>For Documentation Portal or CCMS Software Producers</Trans>
       </h2>
       <div className={aboutContentWrapper}>
         <div className={aboutContent}>
-          <p>
-            <Trans>
-            For Documentation Portal or CCMS Software Producers
-            </Trans>
-          </p>
+          
           <p>
             <Trans>
             Findability and context are important quality features of content. Findability is related to UX factors like ease of use, intuitiveness, efficiency. The right context of information is related to  UX factors like relevancy, helpfulness, completeness, safety. 
