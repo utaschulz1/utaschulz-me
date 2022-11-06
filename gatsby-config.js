@@ -7,9 +7,8 @@ const languageOptions = require("./src/i18n/languageOptions.json");
 module.exports = {
   siteMetadata: {
     siteUrl: "https://utaschulz.me/",
-    title: "Uta Schulz | Translation and SEO content",
-    description:
-      "Translation, localization and DTP of technical documentation, eLearning and SEO content for the German market.",
+    title: "Uta Schulz | TCLoc Master Theses Research",
+    description: "How Documentation Portal UX Factors Impact Content Creation",
   },
   trailingSlash: "always",
   plugins: [
@@ -129,7 +128,7 @@ module.exports = {
         description: `Translation, localization and DTP of technical documentation, eLearning and SEO content for the German market.`,
         lang: `de`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: `src/images/thesis-model.png`,
         icon_options: {
           purpose: `any`,
         },

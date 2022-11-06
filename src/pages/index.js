@@ -8,6 +8,7 @@ import Project from "../components/project";
 import About from "../components/about";
 import Content from "../components/content";
 import Uta from "../components/uta";
+import Seo from "../components/seo";
 
 const IndexPage = () => {
   const { language } = useI18next();
@@ -23,6 +24,7 @@ const IndexPage = () => {
       : "https://forms.clickup.com/24337696/f/q6q90-3880/2ULJB8C3DE2CO5MODJ";
   return (
     <Layout>
+      <Seo />
       <Hero url={urlProducers} />
       <Project url={urlProducers} />
       <About url={urlProducers} />
