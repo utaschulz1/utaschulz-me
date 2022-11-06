@@ -36,7 +36,7 @@ const Hero = () => {
           </p>
           <div className={heroButtons}>
             { <SevenRoutesDownload
-              text="Questionnaire for software producers" //Link to 
+              text="Questionnaire for software producers" //Link to https://forms.clickup.com/24337696/f/q6q90-3800/3FPLWDGZVYAAN1V5BL
               color="white"
               backgroundColor="#ee6556"
               padding="7px"
@@ -45,7 +45,7 @@ const Hero = () => {
             <Link
               className={heroButton2}
               to={getLocalizedRoute(
-                "/blog/7-radwanderwege-in-europa-nord-sued/",//to page Hauptkonzepte/main-concepts
+                "/blog/7-radwanderwege-in-europa-nord-sued/",//to page Hauptkonzepte/gatsmain-concepts
                 lng
               )}
             >
