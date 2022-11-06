@@ -27,11 +27,11 @@ const Hero = () => {
       <div className={heroContentWrapper}>
         <div className={heroContent}>
           <h1>
-            <Trans>Wie UX-Faktoren in CDPs die Content-Erstellung beeinflussen</Trans>
+            <Trans>How Documentation Portal UX Factors Impact Content Creation</Trans>
           </h1>
           <p>
             <Trans>
-            Welche UX-Faktoren sind für Conten Delivery Portale relevant? Welchen Einfluss haben diese UX-Faktoren auf die Modularisierung und Klassifizierung von Content im CCMS?
+            Which UX factors are relevant for documentation Portals? What is the impact of these UX factors on modularization and classification of content in a CCMS?
             </Trans>
           </p>
           <div className={heroButtons}>
