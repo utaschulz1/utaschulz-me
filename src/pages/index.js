@@ -17,7 +17,7 @@ const IndexPage = () => {
       {/* <Seo /> */}
       <Hero />
       <Project />
-      {/* <About /> */}
+      <About />
       {/* <NordcapeToPortugal /> */}
       {/* <MoscowToNordcape /> */}
       {/* <TakeAction /> */}

@@ -64,9 +64,6 @@ const Project = () => {
         </Trans>
       </p>
       <div className={projectButtons}>
-        {/* <div className={projectButton1}>
-          <Subscribe margin="0px" />
-        </div> */}
         <Link className={projectButton1} to={getLocalizedRoute("/", lng)}>
           Questionnaire for software producers
         </Link>
