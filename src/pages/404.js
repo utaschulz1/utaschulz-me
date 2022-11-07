@@ -1,7 +1,6 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-import { StaticImage } from "gatsby-plugin-image";
-import { Link, Trans, useTranslation } from "gatsby-plugin-react-i18next";
+import { Link, Trans } from "gatsby-plugin-react-i18next";
 import Layout from "../components/layout";
 
 // styles
@@ -21,8 +20,6 @@ const paragraphStyles = {
 };
 
 const NotFoundPage = () => {
-  const { t } = useTranslation();
-
   return (
     <Layout>
       <div style={pageStyles}>
@@ -37,18 +34,8 @@ const NotFoundPage = () => {
           <span role="img" aria-label="Pensive emoji">
             😔,
           </span>{" "}
-          <Trans>
-            die Route hört hier auf, die Seite, die du gesucht hast, gibt es
-            nicht.
-          </Trans>
+          <Trans>die Seite, die du gesucht hast, gibt es nicht.</Trans>
         </p>
-        <StaticImage
-          alt={t(
-            "Reisefahrrad steht vor einem überflutetem Weg, wo es nicht mehr weiter geht."
-          )}
-          src="../images/dead-end.jpg"
-          height={300}
-        />
         <p />
         <Link to="/">
           <Trans>Zurück zur Homepage</Trans>

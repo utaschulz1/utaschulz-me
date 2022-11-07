@@ -59,7 +59,7 @@ const SEO = ({
   //   language === defaultLanguage
   //     ? siteUrl + "/"
   //     : siteUrl + "/" + language + "/";
-  const localizedBaseUrl = siteUrl + "/" + language + "/";
+  const localizedBaseUrl = siteUrl + language + "/";
 
   const sd = {
     "@context": "https://schema.org",
@@ -199,7 +199,7 @@ const SEO = ({
       {
         "@type": "ListItem",
         position: 2,
-        name: t("Uta Schulz | TCLoc Master Theses Research"),
+        name: t("TCLoc Master Theses Research | Uta Schulz"),
         item: siteUrl + posTwoslug,
       },
       {

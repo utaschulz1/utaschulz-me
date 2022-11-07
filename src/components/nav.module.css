@@ -1,6 +1,4 @@
 .navbar {
-  /* display: flex;
-  justify-content: space-between; */
   background: linear-gradient(
     103deg,
     rgb(0, 0, 0) 33%,
@@ -25,18 +23,12 @@
 
 .navbar a {
   text-decoration: none;
-  /* text-align: left; */
   color: white;
   font-size: 1rem;
 }
 
 .desktop a {
   padding: 14px 10px 15px 10px;
-}
-
-.img {
-  margin-top: -8px;
-  /* padding-top: 0px; */
 }
 
 .mobile {
@@ -61,7 +53,7 @@
 }
 
 .navbar:hover {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.349);
 }
 
 .desktop {
@@ -74,7 +66,7 @@
 
 .icon {
   border: none;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(255, 255, 255, 0.801);
   text-align: left;
 }
 
