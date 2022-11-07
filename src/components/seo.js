@@ -28,7 +28,7 @@ const SEO = ({
   // if type=book: release_date, author, isbn, tags
   const { t } = useTranslation();
   const { pathname } = useLocation();
-  const { language, languages, originalPath } = useI18next();
+  const { language, languages, originalPath, defaultLanguage } = useI18next();
   const orgPath = originalPath;
 
   const data = useStaticQuery(query);
@@ -55,11 +55,11 @@ const SEO = ({
   const logoUrl =
     siteUrl + data.logo.childImageSharp.gatsbyImageData.images.fallback.src;
 
-  // const localizedBaseUrl =
-  //   language === defaultLanguage
-  //     ? siteUrl + "/"
-  //     : siteUrl + "/" + language + "/";
-  const localizedBaseUrl = siteUrl + language + "/";
+  const localizedBaseUrl =
+    language === defaultLanguage
+      ? siteUrl + "/"
+      : siteUrl + "/" + language + "/";
+  // const localizedBaseUrl = siteUrl + language + "/";
 
   const sd = {
     "@context": "https://schema.org",

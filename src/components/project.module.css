@@ -28,14 +28,25 @@
   width: 85%;
   margin: auto;
   margin-top: 10px;
+  color: #cd7020;
+
   background-color: #2174ae;
   border: 2px solid #0d6db1;
 }
 
 .projectButton2 {
-  color: #0d4880;
-  background-color: #e7ecffbb;
-  border: 2px solid #0d4880;
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #cd7020;
+  border: 2px solid #cb640a;
+}
+.projectButton3 {
+  width: 85%;
+  margin: auto;
+  margin-top: 10px;
+  background-color: #cf2445;
+  border: 2px solid #d30a32;
 }
 
 @media screen and (min-width: 934px) {

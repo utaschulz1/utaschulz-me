@@ -13,7 +13,7 @@
 .switcher {
   position: fixed;
   top: 0;
-  right: 0;
+  right: 2%;
 }
 
 .navbar ul {
@@ -31,18 +31,6 @@
   padding: 14px 10px 15px 10px;
 }
 
-.mobile {
-  margin: 0;
-}
-
-.mobile li {
-  margin: 15px 0px;
-}
-
-.mobile a {
-  padding: 8px 10px;
-}
-
 .navbar button:hover,
 .navbar a:hover {
   background-color: rgba(255, 255, 255, 0.349);
@@ -56,52 +44,12 @@
   background-color: rgba(255, 255, 255, 0.349);
 }
 
-.desktop {
-  display: none;
-}
-
-.mobile {
-  display: none;
-}
-
-.icon {
-  border: none;
-  background-color: rgba(255, 255, 255, 0.801);
-  text-align: left;
-}
-
-.burger {
-  padding: 5px 5px;
-}
-
-.line {
-  stroke: black;
-  stroke-width: 7px;
-  stroke-linecap: round;
-}
-
 .switcher a:hover {
   background-color: rgba(240, 248, 255, 0);
 }
 
-@media screen and (min-width: 600px) {
-  .icon {
-    display: none;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  .desktop {
-    display: flex;
-  }
-}
-
 @media screen and (min-width: 934px) {
   .switcher {
-    position: fixed;
-    top: 0;
     right: 10%;
   }
 }

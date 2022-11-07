@@ -47,7 +47,7 @@ module.exports = {
         defaultLanguage: languageOptions.defaultLanguage,
         // if you are using Helmet, you must include siteUrl, and make sure you add http:https
         siteUrl: `http://https://utaschulz.me/`,
-        generateDefaultLanguagePage: true,
+        generateDefaultLanguagePage: false,
         redirect: false,
         // you can pass any i18next options
         // pass following options to allow message content as a key
@@ -79,7 +79,7 @@ module.exports = {
         icon_options: {
           purpose: `any`,
         },
-        start_url: `/en/`,
+        start_url: `/`,
         background_color: `#000000`,
         theme_color: `#0d4880`,
         localize: [
@@ -108,12 +108,12 @@ module.exports = {
         www: false,
         SymLinksIfOwnerMatch: true,
         host: "utaschulz.me",
-        redirect: [
-          `
-          RewriteCond %{ENV:REDIRECT_STATUS} ^$
-          RewriteRule !^[a-z]{2}/ /en%{REQUEST_URI} [L,NE,R=301]
-          `,
-        ],
+        // redirect: [
+        //   `
+        //   RewriteCond %{ENV:REDIRECT_STATUS} ^$
+        //   RewriteRule !^[a-z]{2}/ /en%{REQUEST_URI} [L,NE,R=301]
+        //   `,
+        // ],
       },
     },
   ],

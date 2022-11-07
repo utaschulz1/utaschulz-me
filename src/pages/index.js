@@ -26,7 +26,7 @@ const IndexPage = () => {
     <Layout>
       <Seo />
       <Hero url={urlProducers} />
-      <Project url={urlProducers} />
+      <Project />
       <About url={urlProducers} />
       <Content url={urlUsers} />
       <Uta />

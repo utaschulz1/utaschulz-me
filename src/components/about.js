@@ -8,7 +8,7 @@ import {
   aboutContent,
   aboutContentWrapper,
 } from "./about.module.css";
-import { projectButtons, projectButton1 } from "./project.module.css";
+import { projectButtons, projectButton3 } from "./project.module.css";
 
 const About = (params) => {
   const { t } = useTranslation();
@@ -55,7 +55,7 @@ const About = (params) => {
       </div>
       <div className={projectButtons}>
         <a
-          className={projectButton1}
+          className={projectButton3}
           href={params.url}
           target="_blank"
           rel="noopener noreferrer"

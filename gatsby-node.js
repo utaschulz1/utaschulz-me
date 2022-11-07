@@ -5,11 +5,11 @@ exports.onCreatePage = ({ page, actions }) => {
   const { createPage, deletePage } = actions;
 
   const language = page.context.i18n.language;
-  // const defaultLanguage = page.context.i18n.defaultLanguage;
-  // const lang = language !== defaultLanguage ? "/" + language : "";
+  const defaultLanguage = page.context.i18n.defaultLanguage;
+  const lang = language !== defaultLanguage ? "/" + language : "";
   const originalPath = page.context.i18n.originalPath;
 
-  if (page.internalComponentName === `Component/${language}dev-404-page/`) {
+  if (page.internalComponentName === `Component/${lang}dev-404-page/`) {
     return;
   }
 
@@ -18,12 +18,12 @@ exports.onCreatePage = ({ page, actions }) => {
 
   createPage({
     ...page,
-    path: `${language}${localizedPath}`,
+    path: `${lang}${localizedPath}`,
     context: {
       ...page.context,
       i18n: {
         ...page.context.i18n,
-        path: `${language}${localizedPath}`,
+        path: `${lang}${localizedPath}`,
         originalPath: originalPath,
       },
     },

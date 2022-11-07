@@ -1,22 +1,20 @@
 import * as React from "react";
 import { graphql } from "gatsby";
-// import { useI18next } from "gatsby-plugin-react-i18next";
 
 import Layout from "../components/layout";
-import Uta from "../components/uta";
 import Seo from "../components/seo";
+import ConceptsContent from "../components/conceptsContent";
 
-const IndexPage = () => {
-  // const { language } = useI18next();
+const Concepts = () => {
   return (
     <Layout>
       <Seo />
-      <Uta />
+      <ConceptsContent />
     </Layout>
   );
 };
 
-export default IndexPage;
+export default Concepts;
 
 export const query = graphql`
   query ($language: String) {
