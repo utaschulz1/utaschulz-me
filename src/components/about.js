@@ -8,7 +8,7 @@ import {
   aboutContent,
   aboutContentWrapper,
 } from "./about.module.css";
-import { projectButtons, projectButton1 } from "./project.module.css";
+import { projectButtons, projectButton3 } from "./project.module.css";
 
 const About = (params) => {
   const { t } = useTranslation();
@@ -20,7 +20,15 @@ const About = (params) => {
       </h2>
       <div className={aboutContentWrapper}>
         <div className={aboutContent}>
-          
+          <p>
+            <Trans>
+              Findability and context are important quality features of content.
+              Findability is related to UX factors like ease of use,
+              intuitiveness, efficiency. The right context of information is
+              related to UX factors like relevancy, helpfulness, completeness,
+              safety.
+            </Trans>
+          </p>
           <p>
             <Trans>
               In a documentation portal, how do we fulfil these user needs? Are
@@ -47,7 +55,7 @@ const About = (params) => {
       </div>
       <div className={projectButtons}>
         <a
-          className={projectButton1}
+          className={projectButton3}
           href={params.url}
           target="_blank"
           rel="noopener noreferrer"

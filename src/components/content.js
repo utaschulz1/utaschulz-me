@@ -1,12 +1,15 @@
 import * as React from "react";
-import { Trans } from "gatsby-plugin-react-i18next";
+import { Trans, useTranslation } from "gatsby-plugin-react-i18next";
 import {
   projectWrapper,
   projectButtons,
   projectButton1,
 } from "./project.module.css";
+import { StaticImage } from "gatsby-plugin-image";
 
 const Content = (params) => {
+  const { t } = useTranslation();
+
   return (
     <div className={projectWrapper}>
       <h2>
@@ -23,7 +26,13 @@ const Content = (params) => {
           by telling me which UX factors matter most to you.
         </Trans>
       </p>
-
+      <StaticImage
+        src="../images/thesis-model-CDP-users.jpg"
+        placeholder="blurred"
+        loading="lazy"
+        width={600}
+        alt={t("thesis-model-software-producers.")}
+      />
       <div className={projectButtons}>
         <a
           className={projectButton1}

@@ -20,6 +20,7 @@ p {
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.06em;
   line-height: 1.3em;
+  text-align: left;
 }
 
 #gatsby-focus-wrapper {
