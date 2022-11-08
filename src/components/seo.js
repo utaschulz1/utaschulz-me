@@ -19,7 +19,6 @@ const SEO = ({
   tags,
   author,
   authorLink,
-  isbn,
   wordcount,
 }) => {
   // release_date format: string "yyyy-mm-dd"
@@ -274,7 +273,7 @@ const SEO = ({
       {seo.url && <link rel="canonical" href={seo.url} />}
       {languages.map((lng) => {
         const localizedPath = getLocalizedRoute(orgPath, lng);
-        const lang = "/" + lng;
+        const lang = lng !== defaultLanguage ? "/" + lng : "";
         return (
           <link
             rel="alternate"
@@ -286,7 +285,7 @@ const SEO = ({
       })}
       <link
         rel="alternate"
-        href={siteUrl + "/en" + getLocalizedRoute(orgPath, "en")}
+        href={siteUrl + getLocalizedRoute(orgPath, "en")}
         hrefLang="x-default"
       />
 

@@ -20,7 +20,15 @@ const About = (params) => {
       </h2>
       <div className={aboutContentWrapper}>
         <div className={aboutContent}>
-          
+          <p>
+            <Trans>
+              Findability and context are important quality features of content.
+              Findability is related to UX factors like ease of use,
+              intuitiveness, efficiency. The right context of information is
+              related to UX factors like relevancy, helpfulness, completeness,
+              safety.
+            </Trans>
+          </p>
           <p>
             <Trans>
               In a documentation portal, how do we fulfil these user needs? Are

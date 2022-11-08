@@ -70,12 +70,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Uta Schulz`,
-        short_name: `Uta Schulz`,
-        description: `Translation, localization and DTP of technical documentation, eLearning and SEO content for the German market.`,
+        name: `TCLoc Master Theses Research | Uta Schulz`,
+        short_name: `TCLoc Master Theses Research`,
+        description: `How Documentation Portal UX Factors Impact Content Creation`,
         lang: `en`,
         display: `standalone`,
-        icon: `src/images/thesis-model.png`,
+        icon: `src/images/thesis-model.jpg`,
         icon_options: {
           purpose: `any`,
         },
@@ -86,9 +86,9 @@ module.exports = {
           {
             start_url: `/de/`,
             lang: `de`,
-            name: `Uta Schulz`,
-            short_name: `Uta Schulz`,
-            description: `Translation, localization and DTP of technical documentation, eLearning and SEO content for the German market.`,
+            name: `TCLoc Master Theses Research | Uta Schulz`,
+            short_name: `TCLoc Master Theses Research`,
+            description: `Wie UX-Faktoren in CDPs die Content-Erstellung beeinflussen`,
           },
         ],
       },
@@ -108,12 +108,6 @@ module.exports = {
         www: false,
         SymLinksIfOwnerMatch: true,
         host: "utaschulz.me",
-        // redirect: [
-        //   `
-        //   RewriteCond %{ENV:REDIRECT_STATUS} ^$
-        //   RewriteRule !^[a-z]{2}/ /en%{REQUEST_URI} [L,NE,R=301]
-        //   `,
-        // ],
       },
     },
   ],
