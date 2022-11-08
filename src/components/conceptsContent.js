@@ -10,8 +10,8 @@ const ConceptsContent = () => {
       </h2>
       <p>
         <Trans>
-          <i>Docentation portal</i> is a rather broad concept, even if we limit
-          it to the use in technical documentation.
+          <i>documentation portal</i> is a rather broad concept, even if we
+          limit it to the use in technical documentation.
         </Trans>
       </p>
       <p>
@@ -47,7 +47,7 @@ const ConceptsContent = () => {
       <p>
         <Trans>
           The purpose of these documentation portals is to deliver technical
-          ducumentation to various ends on request.
+          documentation to various ends on request.
         </Trans>
       </p>
       <p>
