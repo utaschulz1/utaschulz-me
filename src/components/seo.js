@@ -4,11 +4,9 @@ import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 import { useI18next, useTranslation } from "gatsby-plugin-react-i18next";
 const getLocalizedRoute = require("../i18n/getLocalizedRoute");
-const faq = require("../faq/faq");
 
 const SEO = ({
   type,
-  typeFaq,
   url,
   position,
   title,
@@ -21,7 +19,6 @@ const SEO = ({
   tags,
   author,
   authorLink,
-  isbn,
   wordcount,
 }) => {
   // release_date format: string "yyyy-mm-dd"
@@ -30,31 +27,28 @@ const SEO = ({
   // if type=book: release_date, author, isbn, tags
   const { t } = useTranslation();
   const { pathname } = useLocation();
-  const { language, languages, defaultLanguage, originalPath } = useI18next();
+  const { language, languages, originalPath, defaultLanguage } = useI18next();
   const orgPath = originalPath;
 
   const data = useStaticQuery(query);
   const { defaultTitle, defaultDescription, siteUrl } = data.site.siteMetadata;
   const defaultImage = data.image.childImageSharp.fixed.srcWebp;
   const defaultImageAlt =
-    "Uta und Menno fahren im Sonnenschein auf einem steinigen Pfad an der Küste der Barentssee auf dem Fahrrad. Im Hintergrund das Nordkap.";
+    "UX factors of documentation portals for content structure.";
 
   const buildTime = data.site.buildTime;
 
   const seo = {
     type: type || "website",
-    typeFaq: typeFaq || false,
     url: `${siteUrl}${pathname}` || url,
     position: position || 1,
     title: title || t(defaultTitle),
     description: description || t(defaultDescription),
     image: `${siteUrl}${image || defaultImage}`,
     alt: imgAlt || t(defaultImageAlt),
-    date: release_date || "2022-03-03",
+    date: release_date || "2022-11-06",
     author: author || "Uta Schulz",
-    authorLink:
-      authorLink ||
-      "https://www.amazon.com/kindle-dbs/entity/author/B09SVCVM7H?_encoding=UTF8&node=283155&offset=0&pageSize=12&searchAlias=stripbooks&sort=author-sidecar-rank&page=1&langFilter=default#formatSelectorHeader",
+    authorLink: authorLink || "https://www.qr.umtranslation.com/",
   };
 
   const logoUrl =
@@ -64,6 +58,7 @@ const SEO = ({
     language === defaultLanguage
       ? siteUrl + "/"
       : siteUrl + "/" + language + "/";
+  // const localizedBaseUrl = siteUrl + language + "/";
 
   const sd = {
     "@context": "https://schema.org",
@@ -71,27 +66,23 @@ const SEO = ({
       {
         "@type": "Organization",
         "@id": siteUrl + "/#organization",
-        name: "We On Bikes",
+        name: "umtranslation",
         url: siteUrl + "/",
-        sameAs: [
-          "https://www.facebook.com/weonbikes",
-          "https://www.instagram.com/weonbikes_on_insta/",
-          "https://www.youtube.com/channel/UCsfAAH-YLEhkwrhZKM3R-Jw",
-        ],
+        sameAs: ["https://www.qr.umtranslation.com/"],
         logo: {
           "@type": "ImageObject",
           "@id": siteUrl + "/#logo",
           url: logoUrl,
-          caption: "We On Bikes Logo",
+          caption: "Logo",
         },
         image: { "@id": siteUrl + "/#logo" },
-        slogan: "Life by bicycle",
+        slogan: "TCLoc Master Theses Research",
       },
       {
         "@type": "WebSite",
         "@id": siteUrl + "/#website",
         url: localizedBaseUrl,
-        name: "We On Bikes",
+        name: "TCLoc Master Theses Research",
         inLanguage: language,
         publisher: { "@id": siteUrl + "/#organization" },
         copyrightHolder: { "@id": siteUrl + "/#organization" },
@@ -158,7 +149,7 @@ const SEO = ({
         "https://www.facebook.com/uta.schulz.12",
         "https://www.instagram.com/uta_on_insta/",
         "https://www.amazon.com/kindle-dbs/entity/author/B09SVCVM7H?_encoding=UTF8&node=283155&offset=0&pageSize=12&searchAlias=stripbooks&sort=author-sidecar-rank&page=1&langFilter=default#formatSelectorHeader",
-        "https://www.amazon.de/Uta-Schulz/e/B09SVCVM7H%3Fref=dbs_a_mng_rwt_scns_share"
+        "https://www.amazon.de/Uta-Schulz/e/B09SVCVM7H%3Fref=dbs_a_mng_rwt_scns_share",
       ],
       worksFor: { "@id": siteUrl + "/#organization" },
       url: siteUrl + "/",
@@ -173,31 +164,6 @@ const SEO = ({
   }
 
   if (seo.type === "article") sd["@graph"].push(sdArticle, sdPerson);
-
-  const sdFaq = {
-    "@type": "FAQPage",
-    isPartOf: { "@id": seo.url + "#webpage" },
-    mainEntityOfPage: { "@id": seo.url + "#webpage" },
-    lastReviewed: buildTime,
-    datePublished: seo.date,
-    dateModified: modified_date || seo.date,
-    inLanguage: language,
-    mainEntity: [],
-  };
-
-  faq.default.forEach((question) => {
-    const obj = {
-      "@type": "Question",
-      name: t(question[0]),
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: t(question[1]),
-      },
-    };
-    sdFaq.mainEntity.push(obj);
-  });
-
-  if (seo.typeFaq) sd["@graph"].push(sdFaq);
 
   // Stuctured data breadcrumb list
 
@@ -232,9 +198,7 @@ const SEO = ({
       {
         "@type": "ListItem",
         position: 2,
-        name: t(
-          "Uta Schulz | TCLoc Master Theses Research"
-        ),
+        name: t("TCLoc Master Theses Research | Uta Schulz"),
         item: siteUrl + posTwoslug,
       },
       {
@@ -269,7 +233,7 @@ const SEO = ({
       {seo.image && <meta property="og:image" content={seo.image} />}
       {seo.alt && <meta property="og:image:alt" content={seo.alt} />}
       {seo.type === "article" && (
-        <meta property="og:site_name" content="WeOnBikes.com" />
+        <meta property="og:site_name" content="utaschulz.me" />
       )}
       {seo.type === "article" && release_date && (
         <meta property="article:published_time" content={release_date} />
@@ -285,20 +249,7 @@ const SEO = ({
         tags.map((tag) => {
           return <meta property="article:tag" content={tag} key={tag} />;
         })}
-      {seo.type === "book" && release_date && (
-        <meta property="booke:release_date" content={release_date} />
-      )}
-      {seo.type === "book" && author && (
-        <meta property="book:author" content={author} />
-      )}
-      {seo.type === "book" && isbn && (
-        <meta property="book:isbn" content={isbn} />
-      )}
-      {seo.type === "book" &&
-        tags &&
-        tags.map((tag) => {
-          return <meta property="book:tag" content={tag} key={tag} />;
-        })}
+
       {languages.map((lng) => {
         if (lng !== language) {
           return (
@@ -334,7 +285,7 @@ const SEO = ({
       })}
       <link
         rel="alternate"
-        href={siteUrl + "/en" + getLocalizedRoute(orgPath, "en")}
+        href={siteUrl + getLocalizedRoute(orgPath, "en")}
         hrefLang="x-default"
       />
 
@@ -356,14 +307,14 @@ const query = graphql`
         siteUrl
       }
     }
-    image: file(relativePath: { eq: "about.png" }) {
+    image: file(relativePath: { eq: "thesis-model.png" }) {
       childImageSharp {
         fixed(width: 500) {
           srcWebp
         }
       }
     }
-    logo: file(relativePath: { eq: "icon.png" }) {
+    logo: file(relativePath: { eq: "thesis-model.png" }) {
       id
       childImageSharp {
         gatsbyImageData(formats: WEBP)

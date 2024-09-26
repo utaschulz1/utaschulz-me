@@ -1,12 +1,17 @@
 import * as React from "react";
-import { Trans } from "gatsby-plugin-react-i18next";
+// import { Trans } from "gatsby-plugin-react-i18next";
+import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next";
+
 import {
   projectWrapper,
   projectButtons,
-  projectButton1,
+  projectButton2,
 } from "./project.module.css";
+const getLocalizedRoute = require("../i18n/getLocalizedRoute");
 
 const Project = (params) => {
+  const { language } = useI18next();
+
   return (
     <div className={projectWrapper}>
       <h2>
@@ -58,14 +63,23 @@ const Project = (params) => {
         </Trans>
       </p>
       <div className={projectButtons}>
-        <a
+        <Link
+          className={projectButton2}
+          to={getLocalizedRoute(
+            "/concepts/", //to page Hauptkonzepte/gatsmain-concepts
+            language
+          )}
+        >
+          <Trans>Concepts</Trans>
+        </Link>
+        {/* <a
           className={projectButton1}
           href={params.url}
           target="_blank"
           rel="noopener noreferrer"
         >
           <Trans>Questionnaire for software producers</Trans>
-        </a>
+        </a> */}
       </div>
     </div>
   );

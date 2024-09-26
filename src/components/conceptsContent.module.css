@@ -1,0 +1,14 @@
+.wrapper {
+  width: 80%;
+  margin: 80px auto;
+}
+
+.wrapper h2 {
+  margin-top: 50px;
+  color: rgb(83, 193, 197);
+}
+
+.wrapper h3 {
+  color: rgb(224, 197, 163);
+  margin-top: 30px;
+}

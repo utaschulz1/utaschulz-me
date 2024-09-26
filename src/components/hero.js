@@ -1,6 +1,6 @@
 import * as React from "react";
 import { StaticImage } from "gatsby-plugin-image";
-import { Trans, Link, useI18next } from "gatsby-plugin-react-i18next";
+import { Trans } from "gatsby-plugin-react-i18next";
 
 import {
   title,
@@ -9,15 +9,9 @@ import {
   heroContent,
   heroButtons,
   heroButton1,
-  heroButton2,
 } from "./hero.module.css";
 
-const getLocalizedRoute = require("../i18n/getLocalizedRoute");
-
 const Hero = (params) => {
-  const { language } = useI18next();
-  const lng = language;
-
   return (
     <div>
       <h1 className={title}>
@@ -43,15 +37,6 @@ const Hero = (params) => {
             >
               <Trans>Questionnaire for software producers</Trans>
             </a>
-            <Link
-              className={heroButton2}
-              to={getLocalizedRoute(
-                "/", //to page Hauptkonzepte/gatsmain-concepts
-                lng
-              )}
-            >
-              <Trans>Concepts</Trans>
-            </Link>
           </div>
         </div>
         <div className={heroImage}>
